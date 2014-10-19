@@ -1,11 +1,8 @@
 # Site settings
-title: Jacob Berchem
-email: jacob.berchem@gmail.com
+title: Jacob Berchem Portfolio
 description: "Jacob Berchem is a designer from Madison, WI"
 baseurl: ""
 url: "http://jacobberchem.com"
-main_username: jakeberk
-github_username:  jakeberkuwmad
 
 # Build settings
 markdown: kramdown
