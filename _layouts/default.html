@@ -6,11 +6,15 @@
   </head>
 
   <header>
-    {% include header.html %}
+    <div class="content-width">
+      {% include header.html %}
+    </div>
   </header>
 
   <body>
-    {{ content }}
+    <div class="content-width">
+      {{ content }}
+    </div>
   </body>
 
 </html>
