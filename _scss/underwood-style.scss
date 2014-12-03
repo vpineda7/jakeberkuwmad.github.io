@@ -5,6 +5,51 @@ main {
     padding:4em 0 4em 0;
     width:100%;
     max-width:28em;
+    margin:0 auto;
   }
 
+  #project-intro {
+    padding-bottom:2em;
+  }
+
+  #book-laying-down {
+    width:110%;
+    margin-left:-1.5em;
+    padding-bottom:5em;
+  }
+
+  #prototype-image {
+    width:100%;
+    max-width:28em;
+    padding-bottom:3em;
+  }
+
+  #arduino-image {
+    width:100%;
+    max-width:28em;
+    float:none;
+  }
+
+  #capactive {
+    padding-bottom:6em;
+  }
+}
+
+@media (min-width: 1015px) {
+  #project-intro, #software, #capactive {
+    margin-left:0;
+  }
+
+  #prototype {
+    float:right;
+  }
+
+  #capactive {
+    float:left;
+  }
+
+  #arduino-image {
+    padding:4em 0 0 1.5em;
+    float:right;
+  }
 }
