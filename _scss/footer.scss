@@ -4,27 +4,22 @@ footer {
   max-width:22em;
   padding:10em 0 5em 0;
   text-align:center;
+
+  a {
+    margin:1em 0.875em 1em 0.875em;
+  }
 }
 
-ul {
-  list-style:none;
-  margin:0;
-  padding:0 0 2em 0;
-}
-
-li {
-  display:inline;
-  padding: 1em;
-  margin-bottom: 15px;
-}
-
+// Sprite Images
 .icon {
   display:inline-block;
   width:48px;
   height:48px;
+  background-repeat:no-repeat;
+  background-position:0 0;
 
   &:hover {
-    background-position: 0 -48px;
+    background-position:0 -48px;
   }
 
   &:active {
@@ -33,17 +28,17 @@ li {
 }
 
 #behance {
-  background: url("/images/behance.png") no-repeat 0 0;
+  background-image: url("/images/behance.png");
 }
 
 #twitter {
-  background: url("/images/twitter.png") no-repeat 0 0;
+  background-image: url("/images/twitter.png");
 }
 
 #github {
-  background: url("/images/github.png") no-repeat 0 0;
+  background-image: url("/images/github.png");
 }
 
 #dribbble {
-  background: url("/images/dribbble.png") no-repeat 0 0;
+  background-image: url("/images/dribbble.png");
 }
