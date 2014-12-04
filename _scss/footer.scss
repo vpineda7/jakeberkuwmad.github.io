@@ -1,0 +1,49 @@
+footer {
+  margin:0 auto;
+  width:100%;
+  max-width:22em;
+  padding:10em 0 5em 0;
+  text-align:center;
+}
+
+ul {
+  list-style:none;
+  margin:0;
+  padding:0 0 2em 0;
+}
+
+li {
+  display:inline;
+  padding: 1em;
+  margin-bottom: 15px;
+}
+
+.icon {
+  display:inline-block;
+  width:48px;
+  height:48px;
+
+  &:hover {
+    background-position: 0 -48px;
+  }
+
+  &:active {
+    background-position:0 -48px;
+  }
+}
+
+#behance {
+  background: url("/images/behance.png") no-repeat 0 0;
+}
+
+#twitter {
+  background: url("/images/twitter.png") no-repeat 0 0;
+}
+
+#github {
+  background: url("/images/github.png") no-repeat 0 0;
+}
+
+#dribbble {
+  background: url("/images/dribbble.png") no-repeat 0 0;
+}
