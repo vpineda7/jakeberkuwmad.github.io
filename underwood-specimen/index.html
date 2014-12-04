@@ -28,13 +28,17 @@ description: type design, book design, software design
     <h3>Short and sweet.</h3>
     <p>Due to my familiarity with Java and it’s focus on the visual output, I chose Processing, a Java-like language, to build the software which accompanied the prototype. The program responded first when a user touched a given copper strip,  each strip with a unique input pin to tell the software which page the user was on. Then, an on-screen animation would play as long as the user was holding a finger on the screen. The trickiest part of this process is calibrating the software to match the proper level of sensitivity and timing.</p>
   </section>
-
+  <div class="clear-fix"></div>
+  <img src="/images/standing-up.png" alt="Book from side" id="standing-image">
   <section id="final-specimen">
     <h2>The Underwood Font Specimen</h2>
     <h3>The real-deal.</h3>
     <p>After I laid out some initial plans, I began designing the layouts of the book and printed them on an inkjet printer. Because I wanted to showcase the entire Underwood type family, I had to abandon plans to laser cut the book as most of the weight were not suited for laser cutting. Then, I screen printed a thin coat of conductive ink onto a few pages. After some tests with my handy multimeter, I was able to verify the conductivity of the pages, and started assembling the specimen.</p>
-    <img src="/images/ink.png" alt="Jar of conductive ink" id="ink-image">
     <p>The construction of the book was the most important to make this entire project functional. The first decision was to embed the micro-controller in the cover of the book. This would allow the book to function and look quite normal even if not plugged in. Note: because of my limited budget (no budget) I opted for a Teensy++ 2.0 which was very flat and had a mini-B USB cable, though I would have preferred a wireless board to avoid any cables all together. The second construction decision was my decision to use a Japanese stab-binding. This binding would allow me to use adhesive copper tape, wrapped around the spine of the book to attach to the back cover, where the micro-controller was embedded.</p>
     <p>After wrapping the covers in book cloth, wrapping the copper tape, soldering the resistors to the Teensy++ board, and finally clamping and binding the book together, it was fully functional. The user was able to flip through the book and simultaneously interact with the typeface on screen. The user could see the different weights increase and decrease in size, scroll through each character, and more. And all the user needs was the book, a USB cord, and a copy of the software.</p>
   </section>
+  <div class="clear-fix"></div>
+  <img src="/images/opened-cropped.png" alt="Book opened up" id="opened-book-image">
+  <img src="/images/spine-cropped.png" alt="Close-up of spine of the book" id="spine-image">
+  <img src="/images/teensy-cropped.png" alt="Close-up of Teensy microporcessor embedded in cover of the book" id="teensy-image">
 </main>

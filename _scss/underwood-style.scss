@@ -33,10 +33,19 @@ main {
   #capactive {
     padding-bottom:6em;
   }
+
+  #opened-book-image, #spine-image, #teensy-image {
+    padding:0.5em 0 1em 0;
+    width:100%;
+  }
+
+  .clear-fix {
+    clear:both;
+  }
 }
 
 @media (min-width: 1015px) {
-  #project-intro, #software, #capactive {
+  #project-intro, #capactive {
     margin-left:0;
   }
 
@@ -48,8 +57,47 @@ main {
     float:left;
   }
 
+  #final-specimen {
+    float:left;
+  }
+
   #arduino-image {
-    padding:4em 0 0 1.5em;
+    padding:4em 0 8em 1.5em;
     float:right;
+  }
+
+  #opened-book-image {
+    float:left;
+    max-width:28em;
+    // padding-left:2em;
+    // margin-left:0;
+    padding-bottom:1em;
+  }
+
+  #spine-image {
+    float:right;
+    max-width:28em;
+    // padding-left:2em;
+    // margin-left:0;
+    padding-bottom:1em;
+  }
+
+  #standing-image {
+    display:inline;
+    width:100%;
+    max-width:20em;
+    float:right;
+    padding-top:4em;
+  }
+
+  #software {
+    padding-bottom:8em;
+  }
+
+}
+
+@media (max-width: 1015px) {
+  #standing-image {
+    display:none;
   }
 }
