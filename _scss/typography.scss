@@ -9,16 +9,22 @@ h1 {
 
 h2 {
   font-family:$font-stack;
-  font-weight:300;
+  font-weight:400;
   font-size:1.5em;
   color:#303030;
   padding-bottom:0.5em;
   text-transform:uppercase;
 }
 
+#main-header {
+  h2 {
+    font-weight:100;
+  }
+}
+
 h3 {
   font-family:$font-stack;
-  font-weight:300;
+  font-weight:200;
   font-style:italic;
   font-size:1.25em;
   color:#303030;

@@ -6,7 +6,7 @@ footer {
   text-align:center;
 
   a {
-    margin:1em 0.875em 1em 0.875em;
+    margin:0 0.875em 1em 0.875em;
   }
 }
 
@@ -41,4 +41,16 @@ footer {
 
 #dribbble {
   background-image: url("/images/dribbble.png");
+}
+
+@media (max-width: 360px) {
+  footer {
+    a {
+      margin:0 0.325em 0.5em 0.325em;
+    }
+
+    h4 {
+      font-size:0.675em;
+    }
+  }
 }
