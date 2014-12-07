@@ -1,85 +1,138 @@
 main {
   margin:1em;
+  padding-top:2em;
+  text-align:center;
 
   section {
-    padding:4em 0 4em 0;
+    padding:1em 0 1em 0;
     width:100%;
     max-width:28em;
     margin:0 auto;
-  }
-
-  #project-intro {
-    padding-bottom:2em;
-  }
-
-  #book-laying-down {
-    width:105%;
-    margin-left:-1.5em;
-    padding-bottom:5em;
-  }
-
-  #prototype-image {
-    width:100%;
-    max-width:28em;
-    padding-bottom:3em;
-  }
-
-  #arduino-image {
-    width:100%;
-    max-width:28em;
-    float:none;
-  }
-
-  #capactive {
-    padding-bottom:6em;
-  }
-
-  #opened-book-image, #spine-image, #teensy-image {
-    padding:0.5em 0 1em 0;
-    width:100%;
-  }
-
-  .clear-fix {
-    clear:both;
+    text-align:left;
   }
 }
 
+// MOBILE LAYOUT //
+
+#project-intro, #prototype, #capacitive, #final-specimen {
+  padding-top:6em;
+}
+
+#project-intro {
+  float:left;
+}
+
+#book-laying-down {
+  margin:0 0 0 -1em;
+  width:105%;
+}
+
+#prototype-image {
+  width:100%;
+  max-width:28em;
+  text-align:center;
+}
+
+#capacitive {
+  padding-bottom:2em;
+}
+
+#fingerprint {
+  width:40%;
+  float:left;
+}
+
+#underwood-imac {
+  width:55%;
+  float:right;
+  padding-top:0.5em;
+}
+
+#software {
+  padding-top:3em;
+  clear:both;
+}
+
+#plugged-in-image, #spine-image, #teensy-image {
+  width:100%;
+  padding: 1em 0 0 0;
+}
+
+// Adjust left margin to align with vertical grid
+@media (min-width: 700px) {
+  #book-laying-down {
+    margin-left:-1.5em;
+  }
+}
+
+// Hides "Standing Image"
+@media (max-width: 1015px) {
+  #standing-image {
+    display:none;
+  }
+}
+
+// Video
+.embed-container {
+  position: relative;
+  left:-1px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 99.9%; // cropped to avoid tiny black bar on left side
+  height: auto;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// DESKTOP LAYOUT //
+
 @media (min-width: 1015px) {
-  #project-intro, #capactive {
-    margin-left:0;
+  .clear-fix {
+    clear:both;
   }
 
-  #prototype {
+  #project-intro, #prototype, #capacitive, #software, #underwood-imac {
+    padding-top:8em;
+    clear:both;
+  }
+
+  #prototype, #fingerprint, #spine-image {
     float:right;
   }
 
-  #capactive {
+  #prototype-image, #capacitive, #software, #underwood-imac, #final-specimen, #plugged-in-image {
     float:left;
+  }
+
+  #prototype-image {
+    padding-top:4em;
+  }
+
+  #fingerprint {
+    width:100%;
+    max-width:28em;
+    padding-top:4em;
+    margin-right:-1em;
+  }
+
+  #underwood-imac {
+    max-width:27em;
+  }
+
+  #software {
+    float:right;
+    clear:none;
   }
 
   #final-specimen {
-    float:left;
-  }
-
-  #arduino-image {
-    padding:4em 0 8em 1.5em;
-    float:right;
-  }
-
-  #opened-book-image {
-    float:left;
-    max-width:28em;
-    // padding-left:2em;
-    // margin-left:0;
-    padding-bottom:1em;
-  }
-
-  #spine-image {
-    float:right;
-    max-width:28em;
-    // padding-left:2em;
-    // margin-left:0;
-    padding-bottom:1em;
+    padding-top:11em;
   }
 
   #standing-image {
@@ -87,17 +140,16 @@ main {
     width:100%;
     max-width:20em;
     float:right;
-    padding-top:4em;
+    padding-top:10em;
   }
 
-  #software {
-    padding-bottom:8em;
+  #plugged-in-image, #spine-image {
+    max-width:28em;
+    padding-top:6em;
   }
 
-}
-
-@media (max-width: 1015px) {
-  #standing-image {
-    display:none;
+  #teensy-image {
+    padding-top:2em;
   }
+
 }
