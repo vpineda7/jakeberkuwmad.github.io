@@ -26,3 +26,10 @@ html {
 main {
   margin:1em;
 }
+
+a {
+  &:hover, &:link, &:active, &:visited {
+    color:303030;
+    text-decoration:none;
+  }
+}
