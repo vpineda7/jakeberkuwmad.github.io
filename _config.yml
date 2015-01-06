@@ -6,7 +6,7 @@ url: "http://jacobberchem.com"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:categories/:title.html
 sass:
   sass_dir: _scss
   style: compressed
