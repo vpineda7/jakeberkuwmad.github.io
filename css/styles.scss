@@ -2,9 +2,11 @@
 ---
 
 // Variables
-$font-stack:        'Lato', Helvetica, Arial, sans-serif;
-$primary-color:     #00BD8A;
-$background-accent: #E9FFF9;
+$display-font-stack:  'Montserrat', Helvetica, Arial, sans-serif;
+$text-font-stack:     'Lato', Helvetica, Arial, sans-serif;
+$primary-color:       #00BD8A;
+$background-accent:   #00BD8A;
+$accent-pale:         #E9FFF9;
 
 // Imports
 @import "reset";
@@ -12,10 +14,6 @@ $background-accent: #E9FFF9;
 @import "header";
 @import "footer";
 @import "underwood-style";
-
-html {
-  border-top: medium solid $primary-color;
-}
 
 .content-width {
   width:95%;

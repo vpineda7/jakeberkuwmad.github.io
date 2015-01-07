@@ -1,29 +1,38 @@
 h1 {
-  font-family:$font-stack;
-  font-weight:300;
+  font-family:$display-font-stack;
+  font-weight:700;
   font-size:2.5em;
   line-height:1.25em;
-  color:#303030;
-  padding-bottom:0.5em;
-}
-
-h2 {
-  font-family:$font-stack;
-  font-weight:400;
-  font-size:1.5em;
+  letter-spacing:0.0125em;
   color:#303030;
   padding-bottom:0.5em;
   text-transform:uppercase;
 }
 
-#main-header {
+h2 {
+  font-family:$display-font-stack;
+  font-weight:400;
+  font-size:1.5em;
+  color:#303030;
+  padding-bottom:0.5em;
+}
+
+#header-container {
+  h1 {
+    font-size:1.5em;
+    letter-spacing:0.1375em;
+    color:#FFF;
+  }
   h2 {
-    font-weight:100;
+    text-transform:uppercase;
+    font-size:1em;
+    letter-spacing:0.1375em;
+    color:#FFF;
   }
 }
 
 h3 {
-  font-family:$font-stack;
+  font-family:$text-font-stack;
   font-weight:200;
   font-style:italic;
   font-size:1.25em;
@@ -32,7 +41,7 @@ h3 {
 }
 
 h4 {
-  font-family:$font-stack;
+  font-family:$text-font-stack;
   font-weight:300;
   font-size:0.875em;
   color:#303030;
@@ -42,22 +51,13 @@ h4 {
 }
 
 p {
-  font-family:$font-stack;
+  font-family:$text-font-stack;
   font-weight:300;
   font-size:1em;
   color:#303030;
   line-height:1.625em;
   padding-bottom:1em;
   letter-spacing:0.0025em;
-}
-
-header h2 {
-  text-transform:none;
-}
-
-#portfolio-page-header h2 {
-  font-style:italic;
-  font-size:1.25em;
 }
 
 #underwood-style a {
