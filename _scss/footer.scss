@@ -1,29 +1,36 @@
 footer {
-  margin:0 auto;
-  width:100%;
-  max-width:22em;
-  padding:10em 0 5em 0;
-  text-align:center;
+  padding:3.5em 5em;
 
   a {
-    margin:0 0.875em 1em 0.875em;
+    float:left;
+    padding-left:1em;
   }
+
+  h4 {
+    float:right;
+    text-align:right;
+    padding-top:0.5em;
+  }
+
 }
 
 // Sprite Images
+$sprite-size:      30px;
+$neg-sprite-size: -30px;
+
 .icon {
   display:inline-block;
-  width:48px;
-  height:48px;
+  width:$sprite-size;
+  height:$sprite-size;
   background-repeat:no-repeat;
   background-position:0 0;
 
   &:hover {
-    background-position:0 -48px;
+    background-position:0 $neg-sprite-size;
   }
 
   &:active {
-    background-position:0 -48px;
+    background-position:0 $neg-sprite-size;
   }
 }
 
@@ -41,16 +48,4 @@ footer {
 
 #dribbble {
   background-image: url("/images/dribbble.png");
-}
-
-@media (max-width: 360px) {
-  footer {
-    a {
-      margin:0 0.325em 0.5em 0.325em;
-    }
-
-    h4 {
-      font-size:0.675em;
-    }
-  }
 }
