@@ -4,9 +4,19 @@
 // Variables
 $display-font-stack:  'Montserrat', Helvetica, Arial, sans-serif;
 $text-font-stack:     'Lato', Helvetica, Arial, sans-serif;
-$primary-color:       #00BD8A;
-$background-accent:   #00BD8A;
-$accent-pale:         #E9FFF9;
+
+$white:               #FFF;
+$light-gray:          #F7F7F7;
+$dark-gray:           #303030;
+$black:               #000;
+
+$site-main:           #291f2c;
+$site-accent:         #6E4978;
+$underwood-main:      #00BD8A;
+$underwood-accent:    #00704D;
+
+$gradient-duration:   9s;
+
 
 // Imports
 @import "reset";
