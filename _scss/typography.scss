@@ -17,20 +17,6 @@ h2 {
   padding-bottom:0.5em;
 }
 
-#header-container {
-  h1 {
-    font-size:1.5em;
-    letter-spacing:0.1375em;
-    color:#FFF;
-  }
-  h2 {
-    text-transform:uppercase;
-    font-size:1em;
-    letter-spacing:0.1375em;
-    color:#F7F7F7;
-  }
-}
-
 h3 {
   font-family:$text-font-stack;
   font-weight:200;
@@ -58,6 +44,20 @@ p {
   line-height:1.625em;
   padding-bottom:1em;
   letter-spacing:0.0025em;
+}
+
+#navigation-container {
+  h1 {
+    font-size:1.5em;
+    letter-spacing:0.1375em;
+    color:#FFF;
+  }
+  h2 {
+    text-transform:uppercase;
+    font-size:1em;
+    letter-spacing:0.1375em;
+    color:#F7F7F7;
+  }
 }
 
 #underwood-style a {
