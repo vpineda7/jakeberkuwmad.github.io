@@ -30,8 +30,16 @@
   }
 }
 
-.main-color {
-  @include gradient-animation($site-main, $site-accent, $gradient-duration);
+#portfolio-color {
+  @include gradient-animation($portfolio-main, $portfolio-accent, $gradient-duration);
+}
+
+#blog-color {
+  @include gradient-animation($blog-main, $blog-accent, $gradient-duration);
+}
+
+#about-color {
+  @include gradient-animation($about-main, $about-accent, $gradient-duration);
 }
 
 #underwood-color {

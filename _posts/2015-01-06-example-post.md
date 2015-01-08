@@ -1,5 +1,6 @@
 ---
 layout: default
+color: id="blog-color"
 ---
 
 #Sample Post
