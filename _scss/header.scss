@@ -1,3 +1,18 @@
 header {
-  height:30em;
+
+  #background-image {
+    height:20em;
+    background: url(/images/top-underwood-header.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #call-to-action {
+    z-index:1;
+    h1 {
+      // padding-top:13.25em;
+    }
+  }
 }
