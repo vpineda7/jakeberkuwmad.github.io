@@ -3,8 +3,6 @@ layout: default
 color: id="blog-color"
 ---
 
-#Sample Post
-
 ###All text courtesy of [Bluth Ipsum]
 
 Gosh Mom… after all these years, God's not going to take a call from you. Yeah, like I'm going to spill coffee all over this $3,000 suit? Come on! I know what an erection feels like, Michael.
