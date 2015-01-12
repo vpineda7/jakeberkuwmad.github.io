@@ -45,7 +45,7 @@ a {
 
 // Adjust left margin to align with vertical grid
 @media (max-width: 30em) {
-  main, #navigation-container, #call-to-action-text, footer {
+  main, footer {
     margin-left:1em;
     margin-right:1em;
   }
