@@ -2,11 +2,20 @@ header {
   #call-to-action {
     z-index:1;
     padding-top:20em;
+    text-align:center;
 
     // Background Image
     width:100%;
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
+  }
+}
+
+@media (min-width: 720px) {
+  header {
+    #call-to-action {
+      text-align:left;
+    }
   }
 }
