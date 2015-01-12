@@ -1,5 +1,5 @@
 // Flexbox settings for the header layout //
-@mixin flex-box-header {
+@mixin flex-box-header() {
   display:flex;
   flex-flow:row wrap;
   justify-content:space-between;
