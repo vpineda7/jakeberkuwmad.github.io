@@ -56,15 +56,35 @@ header {
 
 #navigation-container {
   h1 {
-    font-size:1.5em;
-    letter-spacing:0.1375em;
+    font-size:1.65em;
+    padding-left:0.125em;
     color:$white;
   }
+
   h2 {
     text-transform:uppercase;
-    font-size:1em;
+    font-size:1.19em;
     letter-spacing:0.1375em;
     color:$light-gray;
+  }
+
+  nav {
+    h2 {
+      font-size:1em;
+      padding-bottom:0.375em;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  #navigation-container {
+    h1 {
+      font-size:1.375em;
+    }
+
+    h2 {
+      font-size:1em;
+    }
   }
 }
 
