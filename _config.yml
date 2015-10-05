@@ -1,9 +1,3 @@
-# Site settings
-title: Jacob Berchem Portfolio
-description: "Jacob Berchem is a designer from Madison, WI"
-baseurl: ""
-url: "http://jacobberchem.com"
-
 # Build settings
 markdown: kramdown
 permalink: /blog/:categories/:title.html
