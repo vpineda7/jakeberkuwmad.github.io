@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: portfolio
 ---
 
 <main>
-  <h1>Hello, world!</h1>
+  {% for page in site.portfolio %}
+    <a href="{{page.url}}">
+      <li class="grid-item-wide"><img src="{{page.image}}" alt="{{page.title}}"></li>
+    </a>
+  {% endfor %}
 </main>

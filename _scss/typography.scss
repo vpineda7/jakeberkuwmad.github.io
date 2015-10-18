@@ -1,0 +1,42 @@
+html {
+  font-size:14px;
+  font-family:'Helvetica Neue', Helvetica, sans-serif;
+  color:#111;
+}
+
+h1 {
+  // color:;
+  font-size:2rem;
+  font-weight:bold;
+  // letter-spacing:;
+  line-height:1;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  // text-align:;
+}
+
+h2 {
+  font-size:1.5rem;
+  font-weight:bold;
+  line-height:1;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+h3 {
+  font-size:1.25rem;
+  line-height:1.2;
+  margin-top:1.2rem;
+  margin-bottom:1.2rem;
+}
+
+p {
+  font-size:1rem;
+  line-height:1.5;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  text-indent:0;
+  hyphenate:auto;
+  hyphenate-before: 2;
+  hyphenate-after: 3;
+}

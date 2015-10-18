@@ -1,6 +1,10 @@
 # Build settings
 markdown: kramdown
-permalink: /blog/:categories/:title.html
+permalink: pretty
 sass:
   sass_dir: _scss
   style: compressed
+
+collections:
+  portfolio:
+    output: true

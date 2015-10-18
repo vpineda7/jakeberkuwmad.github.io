@@ -1,0 +1,33 @@
+body {
+  width:95%;
+  max-width:1290px;
+  margin:0 auto;
+}
+
+img {
+  width:100%;
+}
+
+.left-text{
+  width:100%;
+  max-width:400px;
+  float:left;
+}
+
+.right-images {
+  width:100%;
+  max-width:845px;
+  margin-left:445px;
+}
+
+.grid-item{
+  width:100%;
+  max-width:400px;
+  list-style: none;
+}
+
+.grid-item-wide {
+  width:100%;
+  max-width:845px;
+  list-style: none;
+}
