@@ -36,7 +36,8 @@ p {
   margin-top:1.5rem;
   margin-bottom:1.5rem;
   text-indent:0;
-  hyphenate:auto;
-  hyphenate-before: 2;
-  hyphenate-after: 3;
+}
+
+.about-page p {
+  margin:0;
 }
