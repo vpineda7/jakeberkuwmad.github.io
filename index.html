@@ -3,9 +3,11 @@ layout: portfolio
 ---
 
 <main>
+  <ul>
   {% for page in site.portfolio %}
     <a href="{{page.url}}">
       <li class="grid-item-wide"><img src="{{page.image}}" alt="{{page.title}}"></li>
     </a>
   {% endfor %}
+  </ul>
 </main>

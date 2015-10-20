@@ -8,6 +8,17 @@ img {
   width:100%;
 }
 
+header {
+  padding-top:3.214em;
+  h1 {
+    float:left;
+  }
+  nav {
+    margin-left:445px;
+    padding:0.885em 0 3.214em;
+  }
+}
+
 .left-text{
   width:100%;
   max-width:400px;
@@ -18,6 +29,12 @@ img {
   width:100%;
   max-width:845px;
   margin-left:445px;
+  ul {
+    padding-top:0.325em;
+  }
+  img {
+    padding-bottom:3.214em;
+  }
 }
 
 .grid-item{
