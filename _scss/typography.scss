@@ -1,5 +1,5 @@
 html {
-  font-size:14px;
+  font-size:12px;
   font-family:'Helvetica Neue', Helvetica, sans-serif;
   color:#111;
 }
@@ -44,15 +44,23 @@ p {
 }
 
 .bold-ruler {
-  width:100%;
   height:0.25em;
+  margin:0 0.5rem;
   background-color:#111;
 }
 
 .light-ruler {
-  width:100%;
+  max-width:100%;
   height:100%;
   max-height:0.0625em;
   min-height:1px;
   background-color:#111;
+}
+
+nav { /* Header and Nav Style Reset */
+  padding:2rem 0.5rem !important;
+  a {
+    color:#111;
+    text-decoration:none;
+  }
 }
