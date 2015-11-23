@@ -1,11 +1,7 @@
 ---
-layout: portfolio
+layout: default
 ---
 
-<main>
-  <div class="split-column">
-    {% for page in site.portfolio %}
-      <a href="{{page.url}}" class="portfolio-links"><img src="{{page.image}}" alt="{{page.title}}"></a>
-    {% endfor %}
-  </div>
+<main class="project-grid-main">
+    {% include project-list.html %}
 </main>

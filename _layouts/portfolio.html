@@ -1,11 +1,19 @@
 ---
 layout: default
 ---
-<section class="left-column">
-  <h2>{{ page.title }}</h2>
-  <p>{{ page.description }}</p>
-</section>
+<article class="project">
+  <section class="text-column">
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+  </section>
 
-<section class="double-column">
-  {{ content }}
+  <section class="project-column">
+    {{ content }}
+  </section>
+</article>
+
+<div class="light-ruler"></div>
+
+<section class="project-grid-secondary">
+    {% include project-list.html %}
 </section>
