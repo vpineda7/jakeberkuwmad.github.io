@@ -9,39 +9,16 @@ header, footer {
   padding:0.75rem;
 }
 
-.project-main {
-   /* Prevent vertical gaps */
-   line-height: 0;
-   padding:0 0.75rem 0 0.75rem;
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
 
-   -webkit-column-count: 1;
-   -webkit-column-gap:   1.5rem;
-   -moz-column-count:    1;
-   -moz-column-gap:      1.5rem;
-   column-count:         1;
-   column-gap:           1.5rem;
+.link-images img {
+  width:100%;
+  padding:0.75rem;
 }
-
-.project-main a img, .project-secondary a img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-  padding-bottom:1.5rem;
-}
-
-.project-secondary {
-  /* Prevent vertical gaps */
-  line-height: 0;
-  padding:0 0.75rem 0 0.75rem;
-  
-   -webkit-column-count: 2;
-   -webkit-column-gap:   1.5rem;
-   -moz-column-count:    2;
-   -moz-column-gap:      1.5rem;
-   column-count:         2;
-   column-gap:           1.5rem;
-}
-
 
 .project {
   .text-column, .project-column {
@@ -53,22 +30,29 @@ header, footer {
   }
 }
 
+@media screen and (max-width: 39.99rem){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
 
-@media (min-width:40rem) {
+  #second-grid[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+
+@media (min-width:40rem) and (max-width: 64.99rem) {
   p {
     max-width:49.5%;
     padding-right:0.5rem;
   }
 
-  .project-main {
-     -webkit-column-count: 2;
-     -webkit-column-gap:   1.5rem;
-     -moz-column-count:    2;
-     -moz-column-gap:      1.5rem;
-     column-count:         2;
-     column-gap:           1.5rem;
+  #grid[data-columns]::before {
+  	content: '2 .column.size-1of2';
   }
 
+  #second-grid[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
 }
 
 @media (min-width:65rem) {
@@ -87,12 +71,11 @@ header, footer {
     max-width:30em;
   }
 
-  .project-main, .project-secondary {
-     -webkit-column-count: 3;
-     -webkit-column-gap:   1.5rem;
-     -moz-column-count:    3;
-     -moz-column-gap:      1.5rem;
-     column-count:         3;
-     column-gap:           1.5rem;
+  #grid[data-columns]::before {
+  	content: '3 .column.size-1of3';
+  }
+
+  #second-grid[data-columns]::before {
+    content: '3 .column.size-1of3';
   }
 }
