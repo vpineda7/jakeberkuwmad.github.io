@@ -1,81 +1,136 @@
 body {
   width:100%;
-  max-width:110rem;
+  max-width:70rem;
   margin:0 auto;
-  padding:0.75rem;
+  img {
+    width:100%;
+  }
 }
 
-header, footer {
-  padding:0.75rem;
-}
-
-/* These are the classes that are going to be applied: */
-.column { float: left; }
-.size-1of1 { width: 100%; }
-.size-1of2 { width: 50%; }
-.size-1of3 { width: 33.333%; }
-
-.link-images img {
+.rule {
   width:100%;
-  padding:0.75rem;
+  border-top: $rule;
+  padding-bottom: $gutter;
 }
 
-.project {
-  .text-column, .project-column {
-    padding:0.75rem;
-    img {
-      width:100%;
-      padding-bottom:1.25rem;
+header {
+  min-height:10.14rem;
+  margin-top:7.6rem;
+  padding:0 $half-gutter;
+  h1 {
+    float:left;
+  }
+  nav {
+    width:25%;
+    float:right;
+    padding-left: $gutter;
+    a {
+      margin-right: $half-gutter;
     }
   }
 }
 
-@media screen and (max-width: 39.99rem){
-	#grid[data-columns]::before {
-		content: '1 .column.size-1of1';
-	}
+.portfolio-index {
 
-  #second-grid[data-columns]::before {
-    content: '2 .column.size-1of2';
-  }
 }
 
-@media (min-width:40rem) and (max-width: 64.99rem) {
-  p {
-    max-width:49.5%;
-    padding-right:0.5rem;
+.project {
+  padding:0 $half-gutter;
+  .project-description {
+    width:50%;
+    min-height:10.14rem;
+    margin-left:50%;
+    padding-left: $half-gutter;
+    p {
+      padding-bottom: $half-gutter;
+    }
   }
-
-  #grid[data-columns]::before {
-  	content: '2 .column.size-1of2';
+  .project-first-image {
+    padding:0;
   }
-
-  #second-grid[data-columns]::before {
-    content: '2 .column.size-1of2';
+  .project-main-image {
+    @extend .project-first-image;
+    max-width:75%;
   }
-}
-
-@media (min-width:65rem) {
-  .text-column {
-    width:33.33%;
+  img {
+    padding-top: $gutter;
+  }
+  .portfolio-image-half {
+    width:50%;
     float:left;
   }
-
-  .project-column {
-    width:66.66%;
-    padding:0;
-    margin-left:33.33%;
+  .left {
+    padding-right: $half-gutter;
   }
+  .right {
+    padding-left: $half-gutter;
+  }
+  .frac-images {
+    img {
+      @extend .portfolio-image-half;
+    }
+  }
+  .left-half {
+    width:50%;
+  }
+  .right-three-quarters {
+    @extend .project-main-image;
+    @extend img;
+    float:right;
+  }
+}
 
+.text-columns {
+  width:100%;
+  min-height:10.14rem;
+  float:left;
   p {
-    max-width:30em;
+    font-size:0.9rem;
   }
-
-  #grid[data-columns]::before {
-  	content: '3 .column.size-1of3';
+  .full-width {
+    width:50%;
+    margin-left:50%;
+    padding-left: $half-gutter;
+    padding-top: $gutter;
   }
+  .left {
+    @extend .full-width;
+    width:25% !important;
+    float:left;
+  }
+  .right {
+    width:25%;
+    margin-left:75%;
+    padding-top:$gutter;
+  }
+}
 
-  #second-grid[data-columns]::before {
-    content: '3 .column.size-1of3';
+.project-details {
+  margin-top:7.6rem;
+  h3 {
+    color: $dark-gray;
+    text-transform: capitalize;
+  }
+}
+
+footer {
+  width:100%;
+  min-height:10.14rem;
+  margin-top:7.6rem;
+  padding:0 $half-gutter;
+  float:left;
+  .rule {
+    width:100%;
+  }
+  .social-email {
+    width:25%;
+    float:left;
+    margin-left:50%;
+    padding-left:$half-gutter;
+  }
+  .social-links {
+    width:25%;
+    float:right;
+    padding-left: $gutter;
   }
 }

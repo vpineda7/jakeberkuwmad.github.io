@@ -1,11 +1,41 @@
 ---
 ---
 
-// Imports
-@import "reset";
-@import "layout";
-@import "typography";
+// Variables
 
-a img:hover {
-  opacity:0.9;
+// Color
+$black: #000;
+$white: #FFF;
+$dark-gray: #191919;
+$gray: #292929;
+$light-gray: #737373;
+$lighter-gray: #B5B5B5;
+$accent-color: #81d8d0;
+
+// Layout
+$gutter: 1.28rem;
+$half-gutter: 0.64rem;
+
+// Elements
+$rule: 1px solid $lighter-gray;
+
+// Imports
+@import 'reset';
+@import 'layout';
+@import 'typography';
+
+.image-outline {
+  border: $rule;
+}
+
+// Custom Text Selection Color
+::selection {
+  background: $accent-color;
+}
+::-moz-selection {
+  background: $accent-color;
+}
+
+#return-space {
+  padding-top:$gutter;
 }

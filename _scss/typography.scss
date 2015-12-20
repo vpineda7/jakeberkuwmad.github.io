@@ -1,65 +1,65 @@
 html {
-  font-size:12px;
-  // font-family:'Helvetica Neue', Helvetica, sans-serif;
+  font-size:14px;
   font-family:"aktiv-grotesk","Helvetica Neue", Helvetica, sans-serif;
 }
 
 h1 {
-  font-size:2rem;
-  // font-weight:700;
-  // letter-spacing:;
+  font-size:1rem;
   line-height:1;
-  // margin-top:1rem;
-  // margin-bottom:1rem;
-  // text-align:;
+  font-weight:700;
+  color: $dark-gray;
 }
 
 h2 {
   font-size:1rem;
-  // font-weight:bold;
   line-height:1.5;
-  // margin-top:1rem;
-  // margin-bottom:1rem;
+  font-weight:300;
+  color:$light-gray;
 }
 
 h3 {
-  font-size:1rem;
+  font-size:0.675rem;
   line-height:1.5;
-  // font-style:italic;
-  // margin-top:1.2rem;
-  // margin-bottom:1.2rem;
+  font-weight:300;
+  letter-spacing: 0.02rem;
+  color:$light-gray;
 }
 
 p {
   font-size:1rem;
   line-height:1.35;
-  // margin-top:1.5rem;
-  // margin-bottom:1.5rem;
   text-indent:0;
+  font-weight:300;
+  color:$light-gray;
 }
 
-// .about-page p {
-//   margin:0;
-// }
-//
-.bold-ruler {
-  height:0.25em;
-  // margin:0 0.5rem;
-  background-color:#292929;
+a {
+  text-decoration: none;
+  color:$light-gray;
+  transition: color 0.25s ease;
+  &:hover {
+    color: $dark-gray !important;
+  }
 }
 
-.light-ruler {
-  max-width:100%;
-  height:100%;
-  max-height:0.0625em;
-  min-height:1px;
-  background-color:#292929;
+#underlined-link {
+  border-bottom: $rule;
+  padding-bottom:0.03rem;
+  &:hover {
+    color: $dark-gray;
+  }
 }
-//
-nav { /* Header and Nav Style Reset */
-//   padding:2rem 0.5rem !important;
-  a {
-    color:#000;
-    text-decoration:none;
+
+footer {
+  .social-links {
+    font-size:1.125rem;
+    i {
+      color:$light-gray;
+      padding-right:0.125rem;
+      transition: color 0.25s ease;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
   }
 }
