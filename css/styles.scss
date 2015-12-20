@@ -14,7 +14,8 @@ $accent-color: #81d8d0;
 
 // Layout
 $gutter: 1.28rem;
-$half-gutter: 0.64rem;
+$half-gutter: $gutter / 2;
+$wide-gutter: $gutter * 1.5;
 
 // Elements
 $rule: 1px solid $lighter-gray;
