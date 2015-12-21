@@ -4,8 +4,3 @@ permalink: pretty
 sass:
   sass_dir: _scss
   style: compressed
-
-collections:
-  portfolio:
-    output: true
-    permalink: "/:collection/:title/"

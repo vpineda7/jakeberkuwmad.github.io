@@ -4,6 +4,7 @@ body {
   min-width:30rem;
   margin:0 auto;
   padding: 0 $wide-gutter;
+
   img {
     width:100%;
   }
@@ -25,7 +26,7 @@ header {
   nav {
     width:50%;
     float:right;
-    padding-left: $gutter;
+    padding-left: $half-gutter;
     a {
       margin-right: $half-gutter;
     }
@@ -33,37 +34,60 @@ header {
 }
 
 .portfolio-index {
-
+  img {
+    width:100%;
+    padding:$half-gutter;
+  }
+  .row {
+    width:100%;
+    float:left;
+    display:flex;
+    flex-direction:row;
+  }
+  .half {
+    width:50%;
+  }
+  .quarter {
+    width:50%;
+  }
 }
 
 .project {
   padding:0 $half-gutter;
+
   .project-description {
     width:100%;
     min-height:10.14rem;
     p {
+      max-width:30rem;
       padding-bottom: $half-gutter;
     }
   }
+
   .project-first-image {
     padding:0;
   }
+
   .project-main-image {
     @extend .project-first-image;
     width:100%;
   }
+
   img {
     padding-top: $gutter;
   }
+
   .portfolio-image-half {
     width:100%;
     float:left;
   }
+
   .frac-images {
     img {
       @extend .portfolio-image-half;
     }
   }
+
   .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -78,13 +102,26 @@ header {
       height: 100%;
     }
   }
+
   .left-half {
     width:100%;
   }
+
   .right-three-quarters {
     @extend .project-main-image;
     @extend img;
     float:left;
+  }
+}
+
+.next-project {
+  width:50%;
+  margin-left:50%;
+  padding-left:$half-gutter;
+  margin-top: 7.6rem;
+  float:left;
+  i {
+    color:$lighter-gray;
   }
 }
 
@@ -129,7 +166,7 @@ footer {
   .social-links {
     width:50%;
     float:right;
-    padding-left: $gutter;
+    padding-left: $half-gutter;
   }
 }
 
@@ -137,6 +174,27 @@ footer {
 /*           Medium            */
 /*******************************/
 @media (min-width: 40rem) {
+  .portfolio-index {
+    .quarter {
+      width:25%;
+    }
+    .row {
+      width:100%;
+      float:left;
+      display:flex;
+      flex-direction:row;
+    }
+    .row-1 {
+      align-items: flex-end;
+    }
+    .row-2 {
+      justify-content:flex-end;
+    }
+    .row-3 {
+      justify-content:center;
+    }
+  }
+
   .project {
     .project-main-image {
       max-width:75%;
@@ -163,6 +221,7 @@ footer {
       float:right;
     }
   }
+
   .text-columns {
     .full-width {
       width:100%;
@@ -188,7 +247,9 @@ footer {
 @media (min-width: 52rem) {
   header nav {
     width:25%;
+    padding-left: $gutter;
   }
+
   .project {
     .project-description {
       width:50%;
@@ -196,6 +257,13 @@ footer {
       padding-left: $half-gutter;
     }
   }
+
+  .next-project {
+    width:25%;
+    margin-left:75%;
+    padding-left:$gutter;
+  }
+
   .text-columns {
     .full-width {
       width:50%;
@@ -213,6 +281,7 @@ footer {
       padding-top:$gutter;
     }
   }
+
   footer {
     .social-email {
       width:25%;

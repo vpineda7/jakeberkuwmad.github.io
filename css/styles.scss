@@ -16,6 +16,9 @@ $accent-color: #81d8d0;
 $gutter: 1.28rem;
 $half-gutter: $gutter / 2;
 $wide-gutter: $gutter * 1.5;
+$row: $gutter * 6;
+$double-row: ($row * 2) + ($gutter * 2);
+$triple-row: ($row * 3) + $wide-gutter + $gutter;
 
 // Elements
 $rule: 1px solid $lighter-gray;
