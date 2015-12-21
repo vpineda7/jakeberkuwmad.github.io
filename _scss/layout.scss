@@ -1,7 +1,7 @@
 body {
   width:100%;
   max-width:75rem;
-  min-width:30rem;
+  min-width:33rem;
   margin:0 auto;
   padding: 0 $wide-gutter;
 
@@ -49,6 +49,9 @@ header {
   }
   .quarter {
     width:50%;
+  }
+  .odd-shape { /* Important for odd-shaped images */
+    width:35% !important;
   }
 }
 
@@ -177,6 +180,9 @@ footer {
   .portfolio-index {
     .quarter {
       width:25%;
+    }
+    .odd-shape {
+      width:25% !important;
     }
     .row {
       width:100%;
