@@ -24,7 +24,7 @@ $triple-row: ($row * 3) + $wide-gutter + $gutter;
 $rule: 1px solid $lighter-gray;
 
 // Imports
-@import 'reset';
+@import 'normalize';
 @import 'layout';
 @import 'typography';
 
