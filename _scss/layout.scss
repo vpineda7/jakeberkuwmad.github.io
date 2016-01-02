@@ -26,8 +26,9 @@ header {
     width:50%;
     float:right;
     padding-left: $half-gutter;
-    a {
+    h2 {
       margin-right: $half-gutter;
+      float:left;
     }
   }
 }
@@ -50,7 +51,7 @@ header {
     width:50%;
   }
   .odd-shape { /* Important for odd-shaped images */
-    width:35% !important;
+    width:34.75% !important;
   }
 }
 
