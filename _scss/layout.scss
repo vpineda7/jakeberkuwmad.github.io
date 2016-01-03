@@ -1,7 +1,7 @@
 body {
   width:100%;
   max-width:75rem;
-  min-width:33rem;
+  // min-width:33rem;
   margin:0 auto;
   padding: 0 $wide-gutter;
   img {
@@ -23,9 +23,8 @@ header {
     float:left;
   }
   nav {
-    width:50%;
-    float:right;
-    padding-left: $half-gutter;
+    width:100%;
+    float:left;
     h2 {
       margin-right: $half-gutter;
       float:left;
@@ -94,6 +93,7 @@ header {
   .embed-container {
     position: relative;
     padding-bottom: 56.25%;
+    // margin-bottom:$gutter;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -118,9 +118,7 @@ header {
 }
 
 .next-project {
-  width:50%;
-  margin-left:50%;
-  padding-left:$half-gutter;
+  width:100%;
   margin-top: 7.6rem;
   float:left;
   i {
@@ -167,15 +165,33 @@ footer {
     float:left;
   }
   .social-links {
-    width:50%;
-    float:right;
-    padding-left: $half-gutter;
+    width:100%;
+    float:left;
   }
 }
 
-/*******************************/
-/*           Medium            */
-/*******************************/
+@media (min-width:33rem) {
+  header {
+    nav {
+      width:50%;
+      float:right;
+      padding-left: $half-gutter;
+    }
+  }
+  .next-project {
+    width:50%;
+    margin-left:50%;
+    padding-left:$half-gutter;
+  }
+  footer {
+    .social-links {
+      width:50%;
+      float:right;
+      padding-left: $half-gutter;
+    }
+  }
+}
+
 @media (min-width: 40rem) {
   .portfolio-index {
     .quarter {
@@ -247,9 +263,6 @@ footer {
   }
 }
 
-/*******************************/
-/*            Large            */
-/*******************************/
 @media (min-width: 52rem) {
   header nav {
     width:25%;

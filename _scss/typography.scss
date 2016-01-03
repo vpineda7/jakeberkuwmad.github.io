@@ -69,7 +69,7 @@ footer {
     font-size:1.125rem;
     i {
       color:$lighter-gray;
-      padding-right:0.125rem;
+      padding-right:$half-gutter;
       transition: color 0.25s ease;
       &:hover {
         color: $dark-gray;
