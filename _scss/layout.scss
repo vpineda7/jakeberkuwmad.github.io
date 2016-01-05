@@ -40,7 +40,7 @@ header {
   .row {
     width:100%;
     float:left;
-    display:flex;
+    @include flexbox();
     flex-direction:row;
   }
   .half {
@@ -203,7 +203,7 @@ footer {
     .row {
       width:100%;
       float:left;
-      display:flex;
+      @include flexbox();
       flex-direction:row;
     }
     .row-1 {
