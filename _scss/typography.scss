@@ -1,39 +1,46 @@
 html {
-  font-size:14px;
+  font-size:$font-size + 0px;
   font-family:"aktiv-grotesk","Helvetica Neue", Helvetica, sans-serif;
 }
 
 h1 {
   font-size:1rem;
-  line-height:1;
+  line-height:$leading;
   font-weight:700;
   color: $dark-gray;
 }
 
 h2 {
   font-size:1rem;
-  line-height:1.5;
+  line-height:$leading;
   margin:0;
   font-weight:300;
   color:$light-gray;
 }
 
 h3 {
-  font-size:0.675rem;
-  line-height:1.5;
+  font-size:1rem;
+  line-height:$leading;
   margin:0;
   font-weight:300;
   letter-spacing: 0.02rem;
-  color:$light-gray;
+  color: $dark-gray;
+  text-transform: capitalize;
 }
 
 p {
   font-size:1rem;
-  line-height:1.35;
+  line-height:$leading;
   margin:0;
-  text-indent:0;
   font-weight:300;
   color:$light-gray;
+}
+
+.little-p {
+  p, h3 {
+    font-size:$little-p + 0rem;
+    line-height: ($leading * $font-size) / ($little-p * $font-size);
+  }
 }
 
 a {
@@ -44,12 +51,6 @@ a {
     color: $dark-gray !important;
   }
 }
-
-.project-details h3 {
-  color: $dark-gray;
-  text-transform: capitalize;
-}
-
 
 #underlined-link {
   border-bottom: $rule;
@@ -64,6 +65,7 @@ header {
     margin:0;
   }
 }
+
 footer {
   .social-links {
     font-size:1.125rem;

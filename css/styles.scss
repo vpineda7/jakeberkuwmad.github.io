@@ -18,13 +18,15 @@ $light-gray: #737373;
 $lighter-gray: #B5B5B5;
 $accent-color: #81d8d0;
 
+// Typography
+$font-size: 14;
+$leading: 1.375;
+$little-p: 0.9; // a smaller setting of paragraph text
+
 // Layout
-$gutter: 1.28rem;
-$half-gutter: $gutter / 2;
-$wide-gutter: $gutter * 1.5;
-$row: $gutter * 6;
-$double-row: ($row * 2) + ($gutter * 2);
-$triple-row: ($row * 3) + $wide-gutter + $gutter;
+$gutter: $leading + 0rem;
+$half-gutter: $leading / 2 + 0rem;
+$row: $leading * 7 + 0rem;
 
 // Elements
 $rule: 1px solid $lighter-gray;

@@ -1,9 +1,8 @@
 body {
   width:100%;
   max-width:75rem;
-  // min-width:33rem;
   margin:0 auto;
-  padding: 0 $wide-gutter;
+  padding: 0 ($gutter * 1.5);
   img {
     width:100%;
   }
@@ -16,8 +15,8 @@ body {
 }
 
 header {
-  min-height:10.14rem;
-  margin-top:7.6rem;
+  min-height:$row;
+  margin-top:$row;
   padding:0 $half-gutter;
   h1 {
     float:left;
@@ -52,6 +51,9 @@ header {
   .odd-shape { /* Important for odd-shaped images */
     width:34.75% !important;
   }
+  .row-4 {
+    margin-bottom:$row;
+  }
 }
 
 .project {
@@ -59,10 +61,10 @@ header {
 
   .project-description {
     width:100%;
-    min-height:10.14rem;
+    min-height:$row;
     p {
       max-width:30rem;
-      padding-bottom: $half-gutter;
+      padding-bottom: $leading + 0rem;
     }
   }
 
@@ -93,7 +95,6 @@ header {
   .embed-container {
     position: relative;
     padding-bottom: 56.25%;
-    // margin-bottom:$gutter;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -119,7 +120,8 @@ header {
 
 .next-project {
   width:100%;
-  margin-top: 7.6rem;
+  margin-top: $row;
+  min-height: $row;
   float:left;
   i {
     color:$lighter-gray;
@@ -128,11 +130,8 @@ header {
 
 .text-columns {
   width:100%;
-  min-height:10.14rem;
+  min-height:$row;
   float:left;
-  p {
-    font-size:0.9rem;
-  }
   .full-width {
     width:100%;
     padding-top: $gutter;
@@ -147,14 +146,18 @@ header {
   }
 }
 
+.about-text-columns {
+  padding-bottom:$row;
+}
+
 .project-details {
-  margin-top:7.6rem;
+  margin-top:$row;
+  min-height:$row;
 }
 
 footer {
   width:100%;
-  min-height:10.14rem;
-  margin-top:7.6rem;
+  min-height:$row;
   padding:0 $half-gutter;
   float:left;
   .rule {
@@ -167,6 +170,7 @@ footer {
   .social-links {
     width:100%;
     float:left;
+    padding-top:$leading + 0rem;
   }
 }
 
@@ -258,7 +262,6 @@ footer {
       width:50%;
       margin-left:50%;
       padding-top:$gutter;
-      padding-left: $gutter;
     }
   }
 }
@@ -287,7 +290,7 @@ footer {
     .full-width {
       width:50%;
       margin-left:50%;
-      padding-left: $half-gutter;
+      padding-left:$half-gutter;
     }
     .left {
       width:25% !important;
@@ -298,6 +301,7 @@ footer {
       width:25%;
       margin-left:75%;
       padding-top:$gutter;
+      padding-left:$gutter;
     }
   }
 
