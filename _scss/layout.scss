@@ -133,16 +133,17 @@ header {
   min-height:$row;
   float:left;
   .full-width {
-    width:100%;
-    padding-top: $gutter;
+    padding-bottom:$gutter;
   }
   .left {
-    @extend .full-width;
-    width:100% !important;
+    width:100%;
   }
   .right {
     width:100%;
     padding-top:$gutter;
+  }
+  p {
+    max-width:30rem;
   }
 }
 
@@ -248,21 +249,15 @@ footer {
       float:right;
     }
   }
-
   .text-columns {
-    .full-width {
-      width:100%;
-      padding-top: $gutter;
-    }
     .left {
-      width:50% !important;
+      width:50%;
       float:left;
-      padding-right: $half-gutter;
     }
     .right {
       width:50%;
       margin-left:50%;
-      padding-top:$gutter;
+      padding-top:0;
     }
   }
 }
@@ -272,7 +267,6 @@ footer {
     width:25%;
     padding-left: $gutter;
   }
-
   .project {
     .project-description {
       width:50%;
@@ -280,13 +274,11 @@ footer {
       padding-left: $half-gutter;
     }
   }
-
   .next-project {
     width:25%;
     margin-left:75%;
     padding-left:$gutter;
   }
-
   .text-columns {
     .full-width {
       width:50%;
@@ -294,22 +286,19 @@ footer {
       padding-left:$half-gutter;
     }
     .left {
-      width:25% !important;
       float:left;
-      padding-right:0;
+      margin-left:50%;
+      padding-left:$half-gutter;
     }
     .right {
-      width:25%;
-      margin-left:75%;
+      float:left;
+      margin-left:50%;
       padding-top:$gutter;
-      padding-left:$gutter;
     }
   }
-
   footer {
     .social-email {
       width:25%;
-      float:left;
       margin-left:50%;
       padding-left:$half-gutter;
     }
