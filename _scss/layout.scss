@@ -2,7 +2,7 @@ body {
   width:100%;
   max-width:75rem;
   margin:0 auto;
-  padding: 0 ($gutter * 1.5);
+  padding: 0 $half-gutter;
   img {
     width:100%;
   }
