@@ -61,8 +61,10 @@ a {
 }
 
 header {
-  h1 {
-    margin:0;
+  svg {
+    height: 1.5rem;
+    margin-top: -0.3rem;
+    fill:$light-gray;
   }
 }
 
