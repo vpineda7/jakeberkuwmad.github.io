@@ -49,7 +49,7 @@ header {
     width:50%;
   }
   .odd-shape { /* Important for odd-shaped images */
-    width:34.75% !important;
+    width:36%;
   }
   .row-4 {
     margin-bottom:$row;
@@ -175,12 +175,42 @@ footer {
   }
 }
 
+@media (min-width:20rem) {
+  .portfolio-index {
+    .odd-shape {
+      width:35.25%;
+    }
+  }
+}
+
+
+@media (min-width:24rem) {
+  .portfolio-index {
+    .odd-shape {
+      width:35%;
+    }
+  }
+}
+
+@media (min-width:28rem) {
+  .portfolio-index {
+    .odd-shape {
+      width:34.75%;
+    }
+  }
+}
+
 @media (min-width:33rem) {
   header {
     nav {
       width:50%;
       float:right;
       padding-left: $half-gutter;
+    }
+  }
+  .portfolio-index {
+    .odd-shape {
+      width:34.5%;
     }
   }
   .next-project {
@@ -204,7 +234,7 @@ footer {
       width:25%;
     }
     .odd-shape {
-      width:25% !important;
+      width:25%;
     }
     .row {
       width:100%;
