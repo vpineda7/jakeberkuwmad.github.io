@@ -46,7 +46,6 @@ p {
 a {
   text-decoration: none;
   color:$light-gray;
-  transition: color 0.25s ease;
   &:hover {
     color: $dark-gray !important;
   }
