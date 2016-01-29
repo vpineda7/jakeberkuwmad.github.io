@@ -1,6 +1,6 @@
 body {
   width:100%;
-  max-width:75rem;
+  max-width:$layout-width + 0rem;
   margin:0 auto;
   padding: 0 $half-gutter;
   img {
@@ -35,10 +35,12 @@ header {
   img {
     width:100%;
     padding:$half-gutter;
+    max-width:($layout-width / 2) + 0rem;
   }
   .row {
     width:100%;
     float:left;
+    display:table;
     @include flexbox();
     flex-direction:row;
   }

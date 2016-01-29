@@ -27,6 +27,7 @@ $little-p: 0.9; // a smaller setting of paragraph text
 $gutter: $leading + 0rem;
 $half-gutter: $leading / 2 + 0rem;
 $row: $leading * 7 + 0rem;
+$layout-width: 75; // the maximum width of the site in ems
 
 // Elements
 $rule: 1px solid $lighter-gray;
