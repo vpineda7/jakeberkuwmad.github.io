@@ -46,6 +46,7 @@ p {
 a {
   text-decoration: none;
   color:$light-gray;
+  @include transition();
   &:hover {
     color: $dark-gray !important;
   }
@@ -54,6 +55,7 @@ a {
 #underlined-link {
   border-bottom: $rule;
   padding-bottom:0.03rem;
+  @include transition();
   &:hover {
     color: $dark-gray;
   }
@@ -65,6 +67,10 @@ header {
     height: 1.5rem;
     margin-top: -0.3rem;
     fill:$light-gray;
+    @include transition();
+    &:hover, &:active {
+      fill:$accent-color;
+    }
   }
 }
 

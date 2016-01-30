@@ -9,14 +9,15 @@
   display: flex;
 }
 
+@mixin transition() {
+  transition: all 0.2s ease 0s;
+}
+
 // Color
-$black: #000;
-$white: #FFF;
 $dark-gray: #191919;
-$gray: #292929;
 $light-gray: #737373;
 $lighter-gray: #B5B5B5;
-$accent-color: #81d8d0;
+$accent-color: #BE3A34;
 
 // Typography
 $font-size: 14;
