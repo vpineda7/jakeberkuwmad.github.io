@@ -18,6 +18,7 @@ $dark-gray: #191919;
 $light-gray: #737373;
 $lighter-gray: #B5B5B5;
 $accent-color: #BE3A34;
+$highlight-color: $accent-color;
 
 // Typography
 $font-size: 14;
@@ -44,10 +45,12 @@ $rule: 1px solid $lighter-gray;
 
 // Custom Text Selection Color
 ::selection {
-  background: $accent-color;
+  color:white;
+  background: $highlight-color;
 }
 ::-moz-selection {
-  background: $accent-color;
+  color:white;
+  background: $highlight-color;
 }
 
 #return-space {
