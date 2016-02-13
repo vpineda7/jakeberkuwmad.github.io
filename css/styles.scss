@@ -56,3 +56,8 @@ $rule: 1px solid $lighter-gray;
 #return-space {
   padding-top:$gutter;
 }
+
+.error-page {
+  background-image: url('/assets/transp_bg.png');
+  background-attachment: fixed;
+}
