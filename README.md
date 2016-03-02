@@ -4,7 +4,7 @@ I'm a visual and user exeperience designer from Wisconsin. This is my personal d
 ### [jacobberchem.com](http://jacobberchem.com/)
 
 ##### Typography
-The logo mark is set in [Underwood](), a typeface I initially designed in 2012.
+The logo mark is set in [Underwood](http://jacobberchem.com/portfolio/underwood/), a typeface I initially designed in 2012.
 The remaining type is set in Daalton Maag's [Aktiv Grotesk](https://www.daltonmaag.com/library/aktiv-grotesk_), hosted with [Typekit](https://typekit.com/fonts/aktiv-grotesk-std).
 
 ##### Tools
