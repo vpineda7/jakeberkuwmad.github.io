@@ -52,7 +52,7 @@ a {
   }
 }
 
-#underlined-link {
+.underlined-link a {
   border-bottom: $rule;
   padding-bottom:0.03rem;
   @include transition();
