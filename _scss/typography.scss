@@ -37,9 +37,10 @@ p {
 }
 
 .little-p {
+  font-size:$little-p + 0rem;
+  line-height: ($leading * $font-size) / ($little-p * $font-size);
   p, h3 {
-    font-size:$little-p + 0rem;
-    line-height: ($leading * $font-size) / ($little-p * $font-size);
+    @extend .little-p;
   }
 }
 
