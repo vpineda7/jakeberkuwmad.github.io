@@ -1,6 +1,6 @@
 # Jacob Berchem - Portfolio
 
-I'm a visual and user exeperience designer from Wisconsin. This is my personal design portfolio.
+I'm a visual and user experience designer from Wisconsin. This is my personal design portfolio.
 ### [jacobberchem.com](http://jacobberchem.com/)
 
 ##### Typography
