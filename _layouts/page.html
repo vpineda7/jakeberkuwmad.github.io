@@ -2,9 +2,10 @@
 layout: default
 ---
 <article class="project">
-  <section class="project-description">
+  <section class="project-description {% if page.case-study %}case-study-bump{% else %}{% endif %}">
     <div class="rule"></div>
     <p>{{ page.description }}</p>
+    {% if page.case-study %}<a href="{{ site.baseurl }}/case-study/{{ page.case-study }}">Read the full case study here.</a>{% else %}{% endif %}
   </section>
 
   <section>

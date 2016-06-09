@@ -25,7 +25,8 @@ header {
     width:100%;
     float:left;
     h2 {
-      margin-right: $half-gutter;
+      margin-right: $gutter;
+      padding-top: $gutter;
       float:left;
     }
   }
@@ -68,6 +69,10 @@ header {
       max-width:30rem;
       padding-bottom: $leading + 0rem;
     }
+  }
+
+  .case-study-bump {
+    padding-bottom: ($leading * 2) + 0rem;
   }
 
   .project-first-image {
@@ -221,12 +226,15 @@ footer {
   }
 }
 
-@media (min-width:33rem) {
+@media (min-width:35rem) {
   header {
     nav {
       width:50%;
       float:right;
       padding-left: $half-gutter;
+      h2 {
+        padding-top:0;
+      }
     }
   }
   .portfolio-index {
@@ -314,10 +322,6 @@ footer {
 }
 
 @media (min-width: 52rem) {
-  header nav {
-    width:25%;
-    padding-left: $gutter;
-  }
   .project {
     .project-description {
       width:50%;
@@ -358,5 +362,12 @@ footer {
       float:right;
       padding-left: $gutter;
     }
+  }
+}
+
+@media (min-width: 60rem) {
+  header nav {
+    width:25%;
+    padding-left: $gutter;
   }
 }
