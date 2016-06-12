@@ -4,10 +4,11 @@ html {
 }
 
 h1 {
-  font-size:1rem;
-  line-height:$leading;
-  font-weight:700;
-  color: $dark-gray;
+  font-size:1.75rem;
+  line-height:1;
+  font-weight:300;
+  color: $light-gray;
+  margin-top:-0.425rem;
 }
 
 h2 {

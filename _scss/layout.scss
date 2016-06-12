@@ -61,13 +61,24 @@ header {
 
 .project {
   padding:0 $half-gutter;
-
-  .project-description {
+  .project-title, .project-description {
     width:100%;
     min-height:$row;
     p {
       max-width:30rem;
       padding-bottom: $leading + 0rem;
+    }
+  }
+  .case-study-section {
+    .project-heading {
+      width:100%;
+      min-height:1rem;
+      padding-bottom: $leading + 0rem;
+    }
+    .project-description {
+      .rule {
+        display:none;
+      }
     }
   }
 
@@ -322,11 +333,25 @@ footer {
 }
 
 @media (min-width: 52rem) {
-  .project {
+  .project, .case-study-section {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    .project-title, .project-heading {
+      width:50%;
+      padding-right: $half-gutter;
+    }
     .project-description {
       width:50%;
-      margin-left:50%;
       padding-left: $half-gutter;
+    }
+    .case-study-section {
+      .project-heading {
+        width:50%;
+      }
+      .project-description .rule {
+        display:block!important;
+      }
     }
   }
   .next-project {
