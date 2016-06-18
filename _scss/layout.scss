@@ -258,6 +258,13 @@ footer {
     margin-left:50%;
     padding-left:$half-gutter;
   }
+  .case-study-images {
+    display:flex;
+    div {
+      width:33%;
+      margin: $half-gutter;
+    }
+  }
   footer {
     .social-links {
       width:50%;
@@ -336,6 +343,7 @@ footer {
   .project, .case-study-section {
     display:flex;
     flex-wrap:wrap;
+    justify-content:flex-end;
     width:100%;
     .project-title, .project-heading {
       width:50%;
