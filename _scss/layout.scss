@@ -260,6 +260,8 @@ footer {
   }
   .case-study-images {
     display:flex;
+    // flex-wrap: wrap;
+    margin: 0 (-1 * $half-gutter);
     div {
       width:33%;
       margin: $half-gutter;
