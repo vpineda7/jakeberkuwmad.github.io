@@ -40,6 +40,7 @@ p {
 .little-p {
   font-size:$little-p + 0rem;
   line-height: ($leading * $font-size) / ($little-p * $font-size);
+  max-width:27rem;
   p, h3 {
     @extend .little-p;
   }
