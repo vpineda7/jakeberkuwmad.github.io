@@ -70,6 +70,7 @@ header {
     }
   }
   .case-study-section {
+    padding-top:$row;
     .project-heading {
       width:100%;
       min-height:1rem;
@@ -165,6 +166,10 @@ header {
     @extend img;
     float:left;
   }
+}
+
+.case-study {
+  padding-bottom:$row;
 }
 
 .next-project {
@@ -385,7 +390,7 @@ footer {
         // justify-content: flex-start;
       }
       .single-image {
-        width:50%;
+        width:75%;
         div {
           width:100%;
           padding-left:0;
