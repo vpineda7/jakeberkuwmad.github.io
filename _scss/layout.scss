@@ -96,6 +96,11 @@ header {
         }
       }
     }
+    .max-width-third-images {
+      img {
+        max-width:500px;
+      }
+    }
     .full-width-image {
        flex-wrap: wrap !important;
      }
