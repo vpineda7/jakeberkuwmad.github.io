@@ -40,9 +40,15 @@ p {
 .little-p {
   font-size:$little-p + 0rem;
   line-height: ($leading * $font-size) / ($little-p * $font-size);
-  max-width:27rem;
+  // max-width:27rem;
   p, h3 {
     @extend .little-p;
+  }
+}
+
+.case-study-images {
+  .little-p {
+    max-width:27rem;
   }
 }
 
