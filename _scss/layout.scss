@@ -183,6 +183,35 @@ header {
   padding-bottom:$row;
 }
 
+.case-study-index {
+  margin-bottom:$row;
+  display:flex;
+  flex-wrap: wrap;
+  .case-study-index-description {
+    width:100%;
+    min-height:$row;
+    padding:0 $half-gutter;
+    margin-bottom:$row;
+    h2 {
+      max-width:30rem;
+      padding-bottom: $leading + 0rem;
+    }
+  }
+  .case-study-index-links {
+    width:100%;
+    min-height: $row;
+    display:flex;
+    .case-study-index-image {
+      width:50%;
+      padding: $half-gutter;
+    }
+    .case-study-index-text-link {
+      width:50%;
+      padding: $half-gutter;
+    }
+  }
+}
+
 .next-project {
   width:100%;
   margin-top: $row;
@@ -359,6 +388,18 @@ footer {
       width:50%;
       margin-left:50%;
       padding-top:0;
+    }
+  }
+  .case-study-index {
+    justify-content:flex-end;
+    .case-study-index-description {
+      width:50%;
+    }
+    .case-study-index-links {
+      justify-content: flex-end;
+      .case-study-index-image {
+        width:25%;
+      }
     }
   }
 }
