@@ -57,6 +57,10 @@ $rule: 1px solid $lighter-gray;
   padding-top:$gutter;
 }
 
+body {
+  background-color:white;
+}
+
 .error-page {
   background-image: url('/assets/transp_bg.png');
   background-attachment: fixed;
