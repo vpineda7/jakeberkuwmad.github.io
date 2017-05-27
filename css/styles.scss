@@ -16,7 +16,7 @@
 // Color
 $dark-gray: #191919;
 $light-gray: #737373;
-$lighter-gray: #B5B5B5;
+$lighter-gray: #E0E0E2;
 $accent-color: #BE3A34;
 $highlight-color: $accent-color;
 
@@ -40,7 +40,7 @@ $rule: 1px solid $lighter-gray;
 @import 'typography';
 
 .image-outline {
-  border: $rule;
+  border: $rule !important;
 }
 
 // Custom Text Selection Color
