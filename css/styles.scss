@@ -43,6 +43,10 @@ $rule: 1px solid $lighter-gray;
   border: $rule !important;
 }
 
+.browser-mockup-outline {
+  border: 1px solid $dark-gray !important;
+}
+
 // Custom Text Selection Color
 ::selection {
   color:white;
