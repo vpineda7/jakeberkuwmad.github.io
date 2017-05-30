@@ -54,10 +54,10 @@ p {
 
 a {
   text-decoration: none;
-  color:$light-gray;
+  color:$dark-gray;
   @include transition();
   &:hover {
-    color: $dark-gray !important;
+    color: $light-gray !important;
   }
 }
 
@@ -87,11 +87,11 @@ footer {
   .social-links {
     font-size:1.125rem;
     i {
-      color:$lighter-gray;
+      color:$light-gray;
       padding-right:$half-gutter;
       transition: color 0.25s ease;
       &:hover {
-        color: $dark-gray;
+        color: $lighter-gray;
       }
     }
   }
